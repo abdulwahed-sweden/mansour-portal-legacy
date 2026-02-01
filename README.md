@@ -62,6 +62,19 @@ The original remains enshrined in Grandmother's room - untouched, unmoving, eter
 
 ---
 
+## Live on Solana Devnet
+
+The painting's soul is now immortalized on the Solana blockchain.
+
+| Field | Value |
+|-------|-------|
+| **Program ID** | [`DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA`](https://explorer.solana.com/address/DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA?cluster=devnet) |
+| **Legacy PDA** | [`ELicsGcPhTS65YGXFEX8Uv8y8WGit9FXReKXGKP9sjE1`](https://explorer.solana.com/address/ELicsGcPhTS65YGXFEX8Uv8y8WGit9FXReKXGKP9sjE1?cluster=devnet) |
+| **Network** | Solana Devnet |
+| **Status** | Deployed & Verified |
+
+---
+
 ## Technical Overview
 
 This is a Solana smart contract built with the **Anchor framework** that creates a dynamic Legacy NFT representing the painting's journey.
@@ -140,6 +153,8 @@ mansour-portal-legacy/
 │           └── lib.rs        # Main contract
 ├── tests/
 │   └── mansour-portal.ts     # Integration tests
+├── scripts/
+│   └── test-devnet.ts        # Devnet interaction script
 └── migrations/
     └── deploy.ts             # Deployment script
 ```
@@ -151,8 +166,8 @@ mansour-portal-legacy/
 ### Prerequisites
 
 - [Rust](https://rustup.rs/) (stable)
-- [Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools) (v1.18+)
-- [Anchor](https://www.anchor-lang.com/docs/installation) (v0.30+)
+- [Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools) (v2.1+)
+- [Anchor](https://www.anchor-lang.com/docs/installation) (v0.32+)
 - [Node.js](https://nodejs.org/) (v18+)
 
 ### Build
