@@ -1,14 +1,27 @@
-# Mansour's Portal: From Sweden to Gaza
+# Mansour's Portal: The Resilient Bloom
 
-> *A Legacy NFT immortalizing a family painting's journey across continents*
+<div align="center">
+
+![Solana](https://img.shields.io/badge/Solana-Devnet-9945FF?style=for-the-badge&logo=solana&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-Anchor-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+**A Legacy NFT immortalizing a family painting's journey from Sweden to Gaza**
+
+[View NFT](https://explorer.solana.com/address/GdSW2Drudy2VxYb1ZtHm9AmjsvJ9artaeSRmYqTxUX8m?cluster=devnet) | [View Painting](https://gateway.pinata.cloud/ipfs/QmbmreB8fSVruYEGZZqdnxxyvdEyibiBp21nG84qtKca3F) | [View Metadata](https://gateway.pinata.cloud/ipfs/QmY3p5oZV7ffAu4u9cFRHD44qnfykMzP5ZH5MNPJN3NHTF)
+
+</div>
 
 ---
 
-## The Painting's Soul
+<div align="center">
 
-**"In memory of our beloved Grandmother in Cairo.**
-**You held this light when the world was dark.**
-**The canvas stays with you; its soul travels the world."**
+*"In memory of our beloved Grandmother in Cairo.*
+*You held this light when the world was dark.*
+*The canvas stays with you; its soul travels the world."*
+
+</div>
 
 ---
 
@@ -52,53 +65,95 @@ This NFT carries its soul.
 
 ---
 
-## The Journey Narrative
+## On-Chain Details
+
+<div align="center">
+
+| Component | Address | Link |
+|-----------|---------|------|
+| **NFT Mint** | `GdSW2Drudy2VxYb1ZtHm9AmjsvJ9artaeSRmYqTxUX8m` | [Explorer](https://explorer.solana.com/address/GdSW2Drudy2VxYb1ZtHm9AmjsvJ9artaeSRmYqTxUX8m?cluster=devnet) |
+| **Program ID** | `DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA` | [Explorer](https://explorer.solana.com/address/DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA?cluster=devnet) |
+| **Legacy PDA** | `ELicsGcPhTS65YGXFEX8Uv8y8WGit9FXReKXGKP9sjE1` | [Explorer](https://explorer.solana.com/address/ELicsGcPhTS65YGXFEX8Uv8y8WGit9FXReKXGKP9sjE1?cluster=devnet) |
+| **Network** | Solana Devnet | - |
+
+</div>
+
+### IPFS Storage
+
+| Asset | CID | Gateway |
+|-------|-----|---------|
+| **Painting** | `QmbmreB8fSVruYEGZZqdnxxyvdEyibiBp21nG84qtKca3F` | [View Image](https://gateway.pinata.cloud/ipfs/QmbmreB8fSVruYEGZZqdnxxyvdEyibiBp21nG84qtKca3F) |
+| **Metadata** | `QmY3p5oZV7ffAu4u9cFRHD44qnfykMzP5ZH5MNPJN3NHTF` | [View JSON](https://gateway.pinata.cloud/ipfs/QmY3p5oZV7ffAu4u9cFRHD44qnfykMzP5ZH5MNPJN3NHTF) |
+
+---
+
+## The Dynamic Aura
+
+Grandmother noticed the painting "looked different every time she gazed at it." This contract honors that observation with a dynamic `VisualAura` attribute that changes based on the current time in Cairo (UTC+2):
+
+| Cairo Time | Aura | Description |
+|------------|------|-------------|
+| 05:00 - 11:59 | **Serene Dawn** | Morning light bathes the painting in tranquility |
+| 12:00 - 16:59 | **Golden Radiance** | Afternoon sun paints it with golden warmth |
+| 17:00 - 20:59 | **Mystical Shadows** | Evening shadows bring mystery and depth |
+| 21:00 - 04:59 | **Silent Guardian** | Night watch - the painting guards grandmother's memory |
+
+---
+
+## Tech Stack
+
+<div align="center">
+
+| Layer | Technology |
+|-------|------------|
+| **Smart Contract** | Rust + Anchor Framework |
+| **Blockchain** | Solana |
+| **NFT Standard** | Metaplex Token Metadata |
+| **Storage** | IPFS (Pinata) |
+| **Frontend** | Next.js 16 + TypeScript |
+| **Styling** | Tailwind CSS |
+| **Wallet** | Solana Wallet Adapter |
+
+</div>
+
+---
+
+## Project Structure
 
 ```
-Born in Norrköping, Sweden. Gifted in Cairo, Egypt.
-Survived the siege of Gaza. Returned as a digital legacy to Stockholm.
-The original remains enshrined in Grandmother's room - untouched, unmoving, eternal.
+mansour-portal-legacy/
+├── programs/
+│   └── mansour-portal/
+│       └── src/
+│           └── lib.rs              # Anchor smart contract
+├── frontend/
+│   ├── app/
+│   │   ├── page.tsx                # Main page with dynamic aura
+│   │   ├── layout.tsx              # Root layout
+│   │   ├── providers.tsx           # Wallet providers
+│   │   └── globals.css             # Global styles
+│   ├── next.config.ts              # Next.js config
+│   └── package.json                # Frontend dependencies
+├── scripts/
+│   └── mint-nft.ts                 # Metaplex NFT minting script
+├── tests/
+│   └── mansour-portal.ts           # Integration tests
+├── Anchor.toml                     # Anchor configuration
+├── Cargo.toml                      # Rust dependencies
+└── README.md                       # This file
 ```
 
 ---
 
-## Live on Solana Devnet
+## Smart Contract Features
 
-The painting's soul is now immortalized on the Solana blockchain.
-
-| Field | Value |
-|-------|-------|
-| **Program ID** | [`DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA`](https://explorer.solana.com/address/DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA?cluster=devnet) |
-| **Legacy PDA** | [`ELicsGcPhTS65YGXFEX8Uv8y8WGit9FXReKXGKP9sjE1`](https://explorer.solana.com/address/ELicsGcPhTS65YGXFEX8Uv8y8WGit9FXReKXGKP9sjE1?cluster=devnet) |
-| **Network** | Solana Devnet |
-| **Status** | Deployed & Verified |
-
----
-
-## Technical Overview
-
-This is a Solana smart contract built with the **Anchor framework** that creates a dynamic Legacy NFT representing the painting's journey.
-
-### Smart Contract Features
-
-| Feature | Description |
-|---------|-------------|
+| Function | Description |
+|----------|-------------|
 | `initialize_legacy()` | Mint the NFT with complete metadata about the painting's journey |
 | `update_visual_aura()` | Dynamic attribute that changes based on Cairo timezone |
 | `get_journey_narrative()` | Returns the complete story of the painting |
 | `update_family_home()` | Update the family's current location (authority only) |
 | `transfer_authority()` | Pass the legacy to the next generation |
-
-### The Dynamic Aura
-
-Grandmother noticed the painting "looked different every time she gazed at it." This contract honors that observation with a dynamic `VisualAura` attribute that changes based on the current time in Cairo (UTC+2):
-
-| Cairo Time | Aura |
-|------------|------|
-| 05:00 - 11:59 | Serene Dawn |
-| 12:00 - 16:59 | Golden Radiance |
-| 17:00 - 20:59 | Mystical Shadows |
-| 21:00 - 04:59 | Silent Guardian |
 
 ### LegacyState Account
 
@@ -112,7 +167,7 @@ pub struct LegacyState {
     sanctuary_location: String,     // "Cairo, Egypt" (IMMUTABLE)
     current_family_home: String,    // "Stockholm, Sweden"
     creation_timestamp: i64,        // On-chain timestamp
-    story_hash: String,             // IPFS/Arweave link
+    story_hash: String,             // IPFS link
     dedication: String,             // Memorial text
     is_enshrined: bool,             // Always true (IMMUTABLE)
     physical_status: String,        // Current physical state
@@ -123,41 +178,14 @@ pub struct LegacyState {
 
 ---
 
-## Security Design
+## Security
 
-This contract was designed with security-first principles. See [SECURITY.md](./SECURITY.md) for the complete security audit documentation.
-
-### Key Security Features
-
-- **Immutable Sacred Fields**: `sanctuary_location` and `is_enshrined` cannot be modified after initialization
+- **Immutable Sacred Fields**: `sanctuary_location` and `is_enshrined` cannot be modified
 - **Authority Checks**: All sensitive functions require the authority's signature
-- **Input Validation**: All string inputs are length-validated to prevent storage attacks
+- **Input Validation**: All string inputs are length-validated
 - **PDA Derivation**: Uses program-derived addresses for deterministic account creation
-- **Custom Errors**: Descriptive error types for debugging and security monitoring
 
----
-
-## Project Structure
-
-```
-mansour-portal-legacy/
-├── README.md                 # This file
-├── LICENSE                   # MIT License
-├── SECURITY.md               # Security documentation
-├── Anchor.toml               # Anchor configuration
-├── Cargo.toml                # Rust dependencies
-├── programs/
-│   └── mansour-portal/
-│       ├── Cargo.toml
-│       └── src/
-│           └── lib.rs        # Main contract
-├── tests/
-│   └── mansour-portal.ts     # Integration tests
-├── scripts/
-│   └── test-devnet.ts        # Devnet interaction script
-└── migrations/
-    └── deploy.ts             # Deployment script
-```
+See [SECURITY.md](./SECURITY.md) for complete security documentation.
 
 ---
 
@@ -170,70 +198,42 @@ mansour-portal-legacy/
 - [Anchor](https://www.anchor-lang.com/docs/installation) (v0.32+)
 - [Node.js](https://nodejs.org/) (v18+)
 
-### Build
+### Build & Deploy
 
 ```bash
+# Build smart contract
 anchor build
-```
 
-### Test
-
-```bash
-anchor test
-```
-
-### Deploy
-
-```bash
 # Deploy to devnet
 anchor deploy --provider.cluster devnet
 
-# Deploy to mainnet (when ready)
-anchor deploy --provider.cluster mainnet-beta
+# Run frontend
+cd frontend && npm install && npm run dev
 ```
 
 ---
 
-## Initialization Example
-
-```typescript
-await program.methods
-  .initializeLegacy(
-    "The Resilient Bloom",
-    "Sara Mansour",
-    10,
-    "Norrköping, Sweden",
-    "Cairo, Egypt",
-    "Stockholm, Sweden",
-    "ipfs://Qm...",  // Link to full story
-    "In loving memory of Grandmother",
-    "Permanently preserved in Cairo"
-  )
-  .accounts({
-    legacyState: legacyPDA,
-    authority: wallet.publicKey,
-    systemProgram: SystemProgram.programId,
-  })
-  .rpc();
-```
-
----
-
-## The Dedication
+## The Journey
 
 ```
-In memory of our beloved Grandmother in Cairo.
-You held this light when the world was dark.
-The canvas stays with you; its soul travels the world.
+Born in Norrköping, Sweden
+        ↓
+Gifted to Grandmother in Cairo, Egypt
+        ↓
+Survived 5 years in Gaza
+        ↓
+Family returned to Stockholm, Sweden
+        ↓
+Immortalized on Solana blockchain
 ```
 
 ---
 
 ## Author
 
-**Abdulwahed Mansour** ([@abdulwahed-sweden](https://github.com/abdulwahed-sweden))
+**Abdulwahed Mansour**
 
-Security Researcher | Smart Contract Auditor
+[![GitHub](https://img.shields.io/badge/GitHub-abdulwahed--sweden-181717?style=flat&logo=github)](https://github.com/abdulwahed-sweden)
 
 ---
 
@@ -243,4 +243,9 @@ MIT License - See [LICENSE](./LICENSE) for details.
 
 ---
 
-*The physical painting remains in grandmother's room in Cairo. This NFT is its digital soul—forever traveling, forever remembering.*
+<div align="center">
+
+*The physical painting remains in grandmother's room in Cairo.*
+*This NFT is its digital soul—forever traveling, forever remembering.*
+
+</div>
