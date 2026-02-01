@@ -1,0 +1,27 @@
+{
+  "name": "The Resilient Bloom",
+  "symbol": "MANSOUR",
+  "description": "Painted by Sara Mansour at age 10 in Norrköping, Sweden. Winner of 1st place in a school art competition. Gifted to her grandmother in Cairo, Egypt - whom she had never met. The grandmother was mesmerized by how the painting 'looked different every time she gazed at it.' The Mansour family traveled to Gaza and was trapped for 5 years due to COVID-19, then survived the October 7th war before returning to Stockholm. The grandmother passed away, but the original canvas remains forever enshrined in her room in Cairo. This NFT is the digital soul of that resilient journey.",
+  "image": "ipfs://QmbmreB8fSVruYEGZZqdnxxyvdEyibiBp21nG84qtKca3F",
+  "external_url": "https://github.com/abdulwahed-sweden/mansour-portal-legacy",
+  "attributes": [
+    {"trait_type": "Artist", "value": "Sara Mansour"},
+    {"trait_type": "Artist Age at Creation", "value": "10"},
+    {"trait_type": "Origin City", "value": "Norrköping, Sweden"},
+    {"trait_type": "Physical Sanctuary", "value": "Cairo, Egypt"},
+    {"trait_type": "Current Family Home", "value": "Stockholm, Sweden"},
+    {"trait_type": "Journey", "value": "Sweden → Egypt → Gaza → Sweden"},
+    {"trait_type": "Status", "value": "Forever Enshrined"},
+    {"trait_type": "Dynamic Feature", "value": "Aura changes with Cairo timezone"},
+    {"trait_type": "Dedication", "value": "In loving memory of Grandmother"}
+  ],
+  "properties": {
+    "category": "image",
+    "creators": [
+      {
+        "address": "GXyomW8KuzkuKip8kribnZQ5depNMSYUvNqRPXHqGQz8",
+        "share": 100
+      }
+    ]
+  }
+}
