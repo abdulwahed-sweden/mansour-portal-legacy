@@ -225,6 +225,68 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Support This Project */}
+            <div className="mt-12 bg-gradient-to-br from-amber-900/40 to-orange-900/40 backdrop-blur-md rounded-3xl p-8 border-2 border-amber-500/30 shadow-2xl">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-white mb-2"
+                    style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.8)" }}>
+                  Help Bring This to Mainnet
+                </h3>
+                <p className="text-gray-200 max-w-2xl mx-auto">
+                  This legacy NFT is currently on Solana Devnet. To immortalize it permanently on Mainnet,
+                  we need approximately 2 SOL for deployment costs. Every contribution helps preserve this
+                  family&apos;s story on the blockchain forever.
+                </p>
+              </div>
+
+              <div className="bg-black/50 rounded-2xl p-6 max-w-lg mx-auto border border-amber-500/20">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-gray-300">Goal</span>
+                  <span className="text-amber-300 font-bold">2 SOL</span>
+                </div>
+                <div className="w-full bg-black/50 rounded-full h-3 mb-4">
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 h-3 rounded-full" style={{ width: '10%' }} />
+                </div>
+                <div className="flex items-center justify-between text-sm mb-6">
+                  <span className="text-gray-400">Current: 0.195 SOL</span>
+                  <span className="text-gray-400">Needed: ~1.8 SOL</span>
+                </div>
+
+                <div className="bg-black/40 rounded-xl p-4 mb-4">
+                  <p className="text-gray-400 text-xs mb-2">Donation Wallet (Solana)</p>
+                  <p className="text-white font-mono text-sm break-all select-all">
+                    GH5YatxeWZXJQzqe5z5L3fBkzHNcBL3PWBE6oG4jfCAo
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <p className="text-gray-300 text-sm mb-3">Send SOL to support this project</p>
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <a
+                      href="https://github.com/abdulwahed-sweden/mansour-portal-legacy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full text-white text-sm font-medium transition-all border border-white/20"
+                    >
+                      View Project
+                    </a>
+                    <a
+                      href="https://twitter.com/intent/tweet?text=Help%20immortalize%20a%20family%27s%20story%20on%20Solana%20Mainnet%20%F0%9F%8E%A8%0A%0AA%2010-year-old%27s%20painting%20that%20traveled%20from%20Sweden%20to%20Gaza%2C%20surviving%20through%20hardship%2C%20now%20becoming%20a%20legacy%20NFT.%0A%0AGoal%3A%202%20SOL%20for%20Mainnet%20deployment%0A%0A%23Solana%20%23NFT%20%23LegacyArt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 rounded-full text-blue-300 text-sm font-medium transition-all border border-blue-500/30"
+                    >
+                      Share on X
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-center text-gray-400 text-sm mt-6 italic">
+                &ldquo;Art transcends borders. Help this painting&apos;s soul travel the world.&rdquo;
+              </p>
+            </div>
+
             {/* On-Chain Details */}
             <div className="mt-12 bg-black/60 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6 text-center"
