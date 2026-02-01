@@ -1,4 +1,5 @@
 [toolchain]
+anchor_version = "0.32.1"
 
 [features]
 resolution = true
@@ -7,11 +8,14 @@ skip-lint = false
 [programs.localnet]
 mansour_portal = "DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA"
 
+[programs.devnet]
+mansour_portal = "DuusvRtdzX2epK2F2WGdDwCktWoCWHaLg6zWXjTmVPqA"
+
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "Devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
